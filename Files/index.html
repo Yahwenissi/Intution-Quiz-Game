@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="Style.css">
+
+    
+</head>
+<body>
+
+<header id="head" > <h3 id="timer">00:00</h3>
+    <h3 id="life" style="display: none;text-align: center">Life: </h3>
+    <button id="theme" onclick="toggleTheme()">
+        <span id="themelogo">
+            <svg id="logo" width="100%" height="100%" viewBox="0 0 130 130" fill="#080808" xmlns="http://www.w3.org/2000/svg">
+                <path d="M110.977 45.977V19.023H84.023L65 0L45.977 19.023H19.023V45.977L0 65L19.023 84.023V110.977H45.977L65 130L84.023 110.977H110.977V84.023L130 65L110.977 45.977ZM65 99.4828C45.977 99.4828 30.5172 84.023 30.5172 65C30.5172 45.977 45.977 30.5172 65 30.5172C84.023 30.5172 99.4828 45.977 99.4828 65C99.4828 84.023 84.023 99.4828 65 99.4828ZM65 42.0115C52.2989 42.0115 42.0115 52.2989 42.0115 65C42.0115 77.7012 52.2989 87.9885 65 87.9885C77.7012 87.9885 87.9885 77.7012 87.9885 65C87.9885 52.2989 77.7012 42.0115 65 42.0115Z" fill="#E8EAED"/>
+            </svg>
+        </span>
+    </button>
+</header>
+
+
+<section id="menu">
+    <div id="menudiv">
+        <h1>Welcome</h1>
+        <button id="start" onclick="startGame()">Start</button>
+        <br>
+        <button id="About This Game" onclick="aboutThisGame()">About This Game</button>
+        <br>
+        <button id="Quit" onclick="showConfirmation()">Quit</button>
+    </div>
+</section>
+
+<div id="confirmationDialog" style="display: none">
+    <p class="quitms" >Quitting already?  <p class="quitms" >Don’t worry, mediocrity will keep you warm at night.</p></p>
+    <button class="confirmbutton" onclick="confirmQuit()">Yes</button>
+    <br><br>
+    <button class="confirmbutton" onclick="cancelQuit()">No</button>
+</div>
+
+
+
+<section class="questionpage">
+
+    <div class="doors" id="doors">
+<!--        <div class="closeddoor"></div>-->
+    </div>
+    <div class="question" id="question">
+<h3 id="question-text" class="question-text"></h3>
+        <ul id="options-list" >
+
+        </ul>
+    </div>
+    <div id="feedback"></div>
+</section>
+
+<section id="aboutGame" style="display: none;">
+    <div id="aboutGameDiv">
+        <h1>About  Web Dev Quiz Adventure Game</h1>
+        <p id="gameDescription">
+
+            Web Dev Quiz Adventure is a thrilling quiz game
+                that challenges your web development skills.
+                Test your knowledge of HTML, CSS, and JavaScript
+                through a series of progressively difficult questions across five levels.
+
+            How to Play:
+
+            Answer multiple-choice questions to advance throughlevels.
+            Failing to choose the correct answer results instant death.
+            Choose from a set of doors, some leading to rewards
+                and others to trap doors that reduce your lives.
+            Successfully navigate through all levels to win, or
+                avoid losing all your lives.
+            Features:
+
+            Levels: Five levels of increasing difficulty.
+            Interactive Doors: Decipher which doors are safe and which are traps.
+            Themes: Switch between light and dark modes.
+            Challenge yourself, track your high scores, and enjoy the ultimate web development quiz experience! </p>
+
+        <h3> Game Developers</h3>
+        <li>Bersabeh Dawit</li>
+        <li>Fikir Bisrat</li>
+        <li>Natinayel Zemedkun</li>
+        <li>Rufael Melese</li>
+        <li>Yahwenissi Elias</li>
+
+        <button id="backToMenu" onclick="showmenu()">Back to Menu</button>
+    </div>
+</section>
+
+<section class="gameresult" style="display: flex; flex-direction: column;gap: 2vh" id="gameresult">
+
+</section>
+
+</body>
+<script src="Resource/jquery.js"></script>
+<script src="index.js"></script>
+</html>
