@@ -1,0 +1,130 @@
+*{
+    color: #01BAEF ;
+}
+.light-theme {
+    background-color: #ffffff; /* White background for light theme */
+}
+
+.dark-theme {
+    background-color: #000000; /* Black background for dark theme */
+}
+
+#theme{
+    margin-top: 0vh;
+    margin-left: 90%;
+}
+
+#gameDescription{
+    width: 100%;
+    text-space: 12px;
+
+    overflow: auto;
+}
+#aboutGameDiv{
+    margin-left:20vw ;
+    width: 60%;
+    font-size: +4vh;
+}
+#confirmationDialog{
+margin-left: 2vw;
+width: 70%;
+    height: auto;
+    margin-top: 4%;
+}
+.quitms{
+    margin-left: 30%;
+    font-size: 7vh;
+    text-align: center
+}
+button{
+    background-color: #01BAEF;
+    color: black;
+    font-weight: bold;
+    width: 20vw;
+    height: 5vh;
+    margin-left: 40vw;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: 0.4s;
+
+}
+button:hover{
+    transform: scale(1.1);
+
+}
+.confirmbutton{
+    margin-left: 35vw;
+}
+#menudiv{
+    margin-top: 13vh;
+    display:flex;
+    flex-direction: column;
+}
+#menudiv h1{
+    text-align: center;
+}
+.questionpage{
+    margin-top: 10vh;
+    margin-left: 20vw;
+    display: flex;
+    flex-direction: column;
+
+}
+#question-text{
+    font-size: 4.4vh;
+}
+
+.doors{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+.door {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.door:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.gameresult{
+    margin-top: 10vh;
+
+}
+
+#theme {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    /*justify-content: center;*/
+    align-items: center;
+    cursor: pointer;
+}
+
+#themelogo {
+    width: 100%;
+    height: 100%;
+}
+
+
+#timer{
+    background-color: transparent;
+    width: 4vw;
+
+    margin-left: 14vh;
+    font-size: 3vh;
+}
+#life{
+    width: 4vw;
+    background-color:transparent;
+
+    margin-left: 14vh;
+    font-size: 3vh;
+
+}
